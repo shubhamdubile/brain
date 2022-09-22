@@ -33,8 +33,8 @@ def predict(image):
     #scores = tf.nn.softmax(predictions[0])
     #scores = scores.numpy()
     scores=np.argmax(predictions, axis=1)
-    st.text(scores)
-    results = class_names[scores]
+    st.text(scores[0])
+    results = class_names[scores[0]]
 
     
     #result = f"{class_names[np.argmax(scores)]} with a { (100 * np.max(scores)).round(2) } % confidence." 
