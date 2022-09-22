@@ -10,7 +10,7 @@ from tensorflow.keras import preprocessing
 import time
 import cv2
 
-fig = plt.figure()
+#fig = plt.figure()
 
 with open("custom.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -32,13 +32,13 @@ def main():
             st.write("Invalid command, please upload an image")
         else:
             with st.spinner('Model working....'):
-                plt.imshow(image)
-                plt.axis("off")
+                #plt.imshow(image)
+                #plt.axis("off")
                 predictions = predict(image)
                 time.sleep(1)
                 st.success('Classified')
                 st.write(predictions)
-                st.pyplot(fig)
+                #st.pyplot(fig)
 
 
 def predict(image):
