@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
-#import matplotlib.pyplot as plt
-#import tensorflow_hub as hub
+
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
@@ -44,7 +43,7 @@ def main():
 def predict(image):
     classifier_model = "new_vgg19.h5"
     IMAGE_SHAPE = (224, 224,3)
-    model = load_model(classifier_model, compile=False)
+    model = load_model(classifier_model)
     test_image = cv2.resize(image, (224,224),
                interpolation = cv2.COLOR_RGB2BGR)
     # test_image = preprocessing.image.img_to_array(test_image)
