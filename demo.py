@@ -13,8 +13,7 @@ def predict(image):
     classifier_model = "new_vgg19.h5"
     IMAGE_SHAPE = (224, 224,3)
     model = tf.keras.models.load_model(classifier_model)
-    test_image = cv2.resize(image, (224,224),
-               interpolation = cv2.COLOR_RGB2BGR)
+    test_image = cv2.resize(image, (224,224),interpolation = cv2.COLOR_RGB2BGR)
     
     test_image = test_image.reshape(1,224,224,3)
     class_names = [
