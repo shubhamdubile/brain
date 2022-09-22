@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-import matplotlib.pyplot as plt
+
 import tensorflow_hub as hub
 import tensorflow as tf
 import numpy as np
@@ -32,8 +32,7 @@ def main():
             st.write("Invalid command, please upload an image")
         else:
             with st.spinner('Model working....'):
-                plt.imshow(image)
-                plt.axis("off")
+                
                 predictions = predict(image)
                 time.sleep(1)
                 st.success('Classified')
