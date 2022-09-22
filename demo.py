@@ -42,6 +42,7 @@ def predict(image):
 
 uploaded_file = st.file_uploader("Choose a image file")
 st.text(uploaded_file)
+st.image(uploaded_file)
 if uploaded_file  is not None:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         
