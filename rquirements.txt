@@ -1,7 +1,7 @@
 
 numpy
 #opencv_python
-opencv-python-headless==4.5.4.60
+opencv-python-headless
 pandas
 streamlit
 tensorflow
