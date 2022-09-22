@@ -18,7 +18,7 @@ def predict(image):
     IMAGE_SHAPE = (224, 224,3)
     model = tf.keras.models.load_model(classifier_model)
     test_image = cv2.resize(image, (224,224)
-                           # ,interpolation = cv2.COLOR_RGB2BGR
+                            ,interpolation = cv2.COLOR_RGB2BGR
                            )
     # test_image = preprocessing.image.img_to_array(test_image)
     # test_image = test_image / 255.0
@@ -43,7 +43,7 @@ def predict(image):
 
 uploaded_file = st.file_uploader("Choose a image file")
 st.text(uploaded_file)
-st.image(uploaded_file)
+#st.image(uploaded_file)
 if uploaded_file  is not None:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         
