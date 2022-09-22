@@ -43,11 +43,12 @@ def predict(image):
 
 uploaded_file = st.file_uploader("Choose a image file")
 st.text(uploaded_file)
-#st.image(uploaded_file)
+
 if uploaded_file  is not None:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         
     opencv_image = cv2.imdecode(file_bytes, 1)
+    st.image(uploaded_file)
     Genrate_pred = st.button("Generate Prediction")
     if Genrate_pred:
         st.text(predict(opencv_image))
