@@ -33,6 +33,7 @@ def predict(image):
     #scores = tf.nn.softmax(predictions[0])
     #scores = scores.numpy()
     scores=np.argmax(predictions, axis=1)
+    st.text(scores)
     results = class_names[scores]
 
     
