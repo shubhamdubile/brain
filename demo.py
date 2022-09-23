@@ -60,7 +60,7 @@ def predict(image):
     test_image = test_image.reshape(1,224,224,3)
     class_names = [
           'You have Glioma Tumor',
-          'Don't worry you do not have Tumor',
+          'Do not worry you do not have Tumor',
           'You have Meningioma Tumor', 
           'You have Pituitary Tumor'
           ]
