@@ -68,7 +68,7 @@ def predict(image):
     #scores = tf.nn.softmax(predictions[0])
     #scores = scores.numpy()
     scores=np.argmax(predictions, axis=1)
-    st.text(scores[0])
+    #st.text(scores[0])
     results = class_names[scores[0]]
 
     
