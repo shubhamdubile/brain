@@ -40,8 +40,7 @@ st.markdown("""
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index">Brain</a>
                     </li>
-                </ul>
-               
+                </ul>   
             </div>
         </div>
     </nav>
