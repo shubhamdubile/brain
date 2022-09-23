@@ -29,16 +29,16 @@ st.markdown("""
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://healthcareapp0.herokuapp.com/">Home</a>
+                        <a class="nav-link active text-light" aria-current="page" href="https://healthcareapp0.herokuapp.com/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="https://healthcareapp0.herokuapp.com/about">Analysis</a>
+                        <a class="nav-link active text-light" href="https://healthcareapp0.herokuapp.com/about">Analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://healthcareapp0.herokuapp.com/heart">Heart</a>
+                        <a class="nav-link active text-light" aria-current="page" href="https://healthcareapp0.herokuapp.com/heart">Heart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Brain</a>
+                        <a class="nav-link active text-light" aria-current="page" href="#">Brain</a>
                     </li>
                 </ul>   
             </div>
