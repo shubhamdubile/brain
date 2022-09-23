@@ -59,10 +59,10 @@ def predict(image):
     # test_image = np.expand_dims(test_image, axis=0)
     test_image = test_image.reshape(1,224,224,3)
     class_names = [
-          'glioma',
-          'no',
-          'Menginioun', 
-          'Pituratry'
+          'You have Glioma Tumor',
+          'Don't worry you do not have Tumor',
+          'You have Meningioma Tumor', 
+          'You have Pituitary Tumor'
           ]
     predictions = model.predict(test_image)
     #scores = tf.nn.softmax(predictions[0])
@@ -76,7 +76,7 @@ def predict(image):
     return results
 
 uploaded_file = st.file_uploader("Choose a image file")
-st.text(uploaded_file)
+
 
 if uploaded_file  is not None:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
