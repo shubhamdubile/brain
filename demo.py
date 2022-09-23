@@ -16,7 +16,7 @@ import tensorflow as tf
 
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 st.markdown("""
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <a class="navbar-brand" href="#">
@@ -29,16 +29,16 @@ st.markdown("""
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="https://healthcareapp0.herokuapp.com/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="about">Analysis</a>
+                        <a class="nav-link active" href="https://healthcareapp0.herokuapp.com/about">Analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="heart">Heart</a>
+                        <a class="nav-link active" aria-current="page" href="https://healthcareapp0.herokuapp.com/heart">Heart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index">Brain</a>
+                        <a class="nav-link active" aria-current="page" href="#">Brain</a>
                     </li>
                 </ul>   
             </div>
